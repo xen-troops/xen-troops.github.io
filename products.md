@@ -16,7 +16,7 @@ Configurable product that include:
 * Linux kernel version across all domains is 4.14
 * AGL version is 5.0.2
 * Android version is 8.1
-* IMG DDK version is XXX (with virtualization, Android and OCL support)
+* IMG DDK version is 1.9/ED4813199 (with virtualization, Android and OCL support) :poop:
 
 ## Internal demo: `prod-demo`
 Configurable product that has the same system layout like `prod-devel`.
