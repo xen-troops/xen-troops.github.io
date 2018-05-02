@@ -23,7 +23,7 @@ This configurable product is serving as a base for all custom products used duri
 ### Supported boards
 
 * Salvator-X with R-Car M3 ES1.1 / H3 ES2.0 / H3 ES3.0-8GB
-* Salvator-XS with R-Car H3 ES3.0
+* Salvator-XS with R-Car H3 ES2.0
 
 ## Internal demo: `prod-demo`
 
