@@ -20,6 +20,7 @@ Here you can find answers for some frequently asked questions and useful hints.
 
 [Control phidget](documentation/Control-phidget)
 
+[Build and run PVH Dom0 on x86 QEMU](documentation/x86_pvh_dom0)
 
 ## Tests
 
