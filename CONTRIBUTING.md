@@ -77,7 +77,11 @@ The explanation body will be committed to the permanent source changelog, so sho
 As in the summary phrase , it is important to be both succinct as well as descriptive.
 
 #### Review process
-You must create Pull Request on github with your changes and ask appropriate persons to review the commits you made. After all comments addressed, reviewers needs to explicitly say "this patch is okay" by providing Reviewed-by tag.
+You need to create Pull Request on GitHub with your changes and ask appropriate persons to review your commits.
+
+If you are not sure who this 'appropriate person' is, look into the [list of reviewers](reviewers).
+
+When all comments are addressed, reviewers need to explicitly approve pull request by providing `Reviewed-by` or `Acked-by` tag.
 
 Reviewer’s statement of oversight
 By offering my Reviewed-by: tag, I state that:
