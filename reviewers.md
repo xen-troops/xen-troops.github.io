@@ -3,6 +3,7 @@ Projects are divided into groups according to frequency of changes of code and i
 ## Group A+
 
 Submitted code will be reviewed. Survivors will be reviewed again.
+
 | Repo                         | Reviewer          | Reviewer             |
 |------------------------------|-------------------|----------------------|
 | linux                        | Volodymyr Babchuk | Oleksandr Tyshchenko |
@@ -18,6 +19,7 @@ Submitted code will be reviewed. Survivors will be reviewed again.
 ## Group A
 
 It's like 'Group A+' but without plus.
+
 | Repo                            | Reviewer             | Reviewer          |
 |---------------------------------|----------------------|-------------------|
 | android_device_xenvm            | Andrii Chepurnyi     | Ruslan Shymkevych |
@@ -43,6 +45,7 @@ It's like 'Group A+' but without plus.
 | xt-log                          | Oleksandr Grytsov    |                   |
 
 ## Previous generation projects
+
 | Repo                      | Reviewer          | Reviewer          |
 |---------------------------|-------------------|-------------------|
 | build-scripts             | Ruslan Shymkevych |                   |
@@ -57,6 +60,7 @@ It's like 'Group A+' but without plus.
 | xt-distro                 | Ruslan Shymkevych |                   |
 
 ## Rarely changed repositories
+
 | Repo                                   | Reviewer          | Reviewer |
 |----------------------------------------|-------------------|----------|
 | agl-cluster-demo-vis                   | Ruslan Shymkevych |          |
@@ -69,6 +73,7 @@ It's like 'Group A+' but without plus.
 ## Really rarely changed repositories
 
 If you think you need to submit code here. Well... Just don't do it.
+
 | Repo                     | Reviewer          | Reviewer |
 |--------------------------|-------------------|----------|
 | agl_surface_switcher     | Ruslan Shymkevych |          |
