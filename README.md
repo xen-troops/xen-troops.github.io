@@ -6,7 +6,9 @@ We are Xen Troops!
 
 ## Docs
 
-Current documentation is located in [manifest wiki](https://github.com/xen-troops/manifests/wiki), but it will be moved to this site eventually.
+Part of documentation is located [here](documentation)
+
+Old wiki is located in [manifest wiki](https://github.com/xen-troops/manifests/wiki).
 
 Product descriptions can be found [here](products)
 
