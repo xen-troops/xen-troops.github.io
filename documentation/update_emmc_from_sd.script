@@ -1,0 +1,97 @@
+# Flash eMMC by SD card image using minicom
+# Expected settings on PC side: 
+#   Board: Uboot settings expected to be "standard". See external script 'set_uboot.mncm_script'/
+
+print "Awaiting for uboot..."
+
+expect {
+    "Hit any key to stop autoboot: "
+}
+send ""
+
+print "Booting from SD card..."
+
+expect {
+    "=>"
+}
+send "setenv boot_dev mmcblk1"
+
+expect {
+    "=>"
+}
+send "run bootcmd_mmc0"
+
+
+expect {
+    "login: "
+}
+send "root"
+
+expect {
+    "dom0:~# "
+}
+
+print "\r\r********************"
+print "\r\r********************"
+print "\r\rWaiting for DomA to start (up to 5 minutes)..."
+timeout 300
+
+expect {
+    "Parsing config from /xt/dom.cfg/doma.cfg"
+    timeout 300 print "Timeout :("
+}
+print "\r\r********************"
+print "\r\r********************"
+print "\r\rWait 10 sec more..."
+
+expect {
+    "Added GSX guest domain"
+    timeout 10 print "destroy..."
+}
+send "xl destroy DomA"
+
+expect {
+    "dom0:~# "
+}
+send "xl console DomD"
+
+expect {
+    "domd login: "
+}
+send "root"
+
+expect {
+    "domd:~# "
+}
+send "systemctl isolate rescue"
+
+expect {
+    "domd login: "
+}
+send "root"
+
+expect {
+    "domd:~# "
+}
+send "mount -o remount,ro /"
+
+expect {
+    "domd:~# "
+}
+# set global timeout
+# Usual time of write for 9GB - 520sec
+print "\r\r********************"
+print "\r\r********************"
+print "\r\rFlashing of image takes about 9 minutes, so set timeout to 600 sec."
+timeout 600
+send "dd if=/dev/mmcblk1 of=/dev/mmcblk0 bs=1M count=9216 status=progress"
+
+expect {
+    ":~# "
+    timeout 600 print "'dd' works too long. Type 'reboot' when it finished."
+}
+send "reboot"
+
+# stop script
+exit
+
