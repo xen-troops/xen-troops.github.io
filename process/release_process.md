@@ -53,6 +53,7 @@ In other words, we have **xt-core** base functionality — a reusable huge SW co
 
 - For the xt-core the evolutionary development is used in the **'main'** branch.
 - Each xt-core repository's **'main'** branch uses [semantic versioning](https://semver.org) to create release tags, such as v1.1.1, v2.2.2, etc.
+- In case of the need to make the release tag on the non-main branch, we use 'yocto way' labeling - **'<branch_name>-<release_version>'**. For example, if the release 'v1.1.1' needs to be created on the 'main' and 'dunfell' branches, besides tag 'v1.1.1' on the 'main' branch, the tag 'dunfell-v1.1.1' should be created on the 'dunfell' branch.
 - Only repositories directly referenced by the products in the moulin configuration *.yaml files are placed inside the **'xt-core'** entity. Those repositories are:
   - xt-common - https://github.com/xen-troops/meta-xt-common
   - xt-rcar - https://github.com/xen-troops/meta-xt-rcar
