@@ -149,12 +149,13 @@ Signed-off-by: Your Friendly Developer <nobody@example.com>
 
 ### One-line description AKA header
 
-Header should be short but comprehensive. Its length is limited to 65
-characters in most cases. But this is more than enough. Do not use
-overly generic descriptions. "Add a new feature" is a bad description
-because it tells almost nothing about a commit. "libxl: add
-"grant_usage" parameter for virtio disk devices" is the great
-description because it clearly states what is goes in the patch.
+Header should be short but comprehensive. Its length is limited to 72
+characters in most cases (size of one line in github). But this is more
+than enough. Do not use overly generic descriptions.
+"Add a new feature" is a bad description because it tells almost
+nothing about a commit. "libxl: add "grant_usage" parameter for
+virtio disk devices" is the great description because it clearly states
+what is goes in the patch.
 
 Use imperative mood when describing the change. Like you are
 commanding codebase to change. When in doubt, do `git log --oneline`
