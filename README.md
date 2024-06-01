@@ -19,3 +19,5 @@ Product descriptions can be found [here](products)
 [Naming of branches and releases](process/naming.md)
 
 [Requirements for releases](process/releases.md)
+
+[How to handle inter-repo dependencies](process/inter-repo.md)
