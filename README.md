@@ -12,4 +12,10 @@ Old wiki is located in [manifest wiki](https://github.com/xen-troops/manifests/w
 
 Product descriptions can be found [here](products)
 
-Want to contribute? Please see [contribution guideline](contribution).
+## Xen-troops process
+
+[Requirements for the pull request](process/process.md).
+
+[Naming of branches and releases](process/naming.md)
+
+[Requirements for releases](process/releases.md)
