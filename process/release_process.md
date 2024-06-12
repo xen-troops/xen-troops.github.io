@@ -111,6 +111,31 @@ It leads us to need a separate 'xt-core' repository that will be the entry point
     - Merging the 'development' branch into the 'main' branch
     - Adding the commit that locks all the dependencies
     - Assigning the release tag to the HEAD commit of the 'main' branch
+- **Approach #3**:
+   - Development is done in the 'development' branch. In this branch, all dependencies can stick to the HEAD. In this stage we separate repositories that are including external dependencies and requires actual commit to stabilize external revision. They could be:
+     - Moulin meta repository which includes moulin.yaml
+     - Zephyr based repository with west.yaml which is the dependency for Moulin repository
+   - Release is done by creating a separate branch for each release on top-level repositories with the name of current release
+   - Version format as **<component>-vX.X.X** is acceptable because
+   - Steps to create release are the following:
+     - On repo with external dependensies (moulin or west.yaml) create a separate branch with the release name
+     - Make a stabilizaition commit with the following changes: all external components switched from branch to specific revision.
+     - Repeat this steps for all repo with external dependencies.
+   - Procs:
+     - Release process results the following **git log** for repo with external dependencies:
+       ```
+               v0.1.0              v0.1.1
+                / *                / *
+            *- * - * - *  - * - * - * - * (master)
+       ```
+       Where rpi5-v0.1.0 and rpi5-v0.1.1 are the branches with only one commit.
+       For Zephyr applications it sets current revisions in west.yaml.
+       For moulin repos is sets current revisions for all components.
+     - Reducing number of branches which requires test to one. Because testing with moulin build requires time and effort
+     - **master** development is seamless from the developers perspective
+     - Reducing amount of effort to merge everything together, which is useful when some of repo with external dependencies are not owned by the team
+   - Cons:
+     - Risk of a need to force-push to the 'development' branch to change commit order before release.
 - Please consider that for **LTS releases**, ONLY variation of the **Approach #1** is applicable. Separate branch for each major **LTS release** and tags usage for dedicated minor/patch versions.
 - Release names should incorporate the [semantic versioning](https://semver.org)
 - The release should contain **ALL your dependencies LOCKED** on a specific 'release tag' of the dependency SW components.
