@@ -3,6 +3,7 @@
 
 |Repo|Reviewer|Reviewer|
 |-|-|-|
+|[.github](https://github.com/xen-troops/.github)|@rshym Ruslan Shymkevych||
 |[agl-cluster-demo-vis](https://github.com/xen-troops/agl-cluster-demo-vis)|@rshym Ruslan Shymkevych||
 |[agl_surface_switcher](https://github.com/xen-troops/agl_surface_switcher)|@rshym Ruslan Shymkevych||
 |[android_device_epam_xenvm-trout](https://github.com/xen-troops/android_device_epam_xenvm-trout)|@arminn Andrii Chepurnyi||
@@ -30,6 +31,7 @@
 |[libvisclient](https://github.com/xen-troops/libvisclient)|@arminn Andrii Chepurnyi||
 |[libxenbe](https://github.com/xen-troops/libxenbe)|@arminn Andrii Chepurnyi|@al1img Oleksandr Grytsov|
 |[linux](https://github.com/xen-troops/linux)|@lorc Volodymyr Babchuk|@otyshchenko1 Oleksandr Tyshchenko|
+|[lisot](https://github.com/xen-troops/lisot)|@dterletskiy Dmytro Terletskyi||
 |[llvm-project](https://github.com/xen-troops/llvm-project)|@rshym Ruslan Shymkevych||
 |[meta-aos-rcar-demo2023](https://github.com/xen-troops/meta-aos-rcar-demo2023)|@al1img Oleksandr Grytsov||
 |[meta-litmusrt](https://github.com/xen-troops/meta-litmusrt)|@rshym Ruslan Shymkevych||
@@ -41,8 +43,12 @@
 |[meta-xt-prod-cockpit-rcar](https://github.com/xen-troops/meta-xt-prod-cockpit-rcar)|@rshym Ruslan Shymkevych||
 |[meta-xt-prod-devel-rcar](https://github.com/xen-troops/meta-xt-prod-devel-rcar)|@lorc Volodymyr Babchuk|@rshym Ruslan Shymkevych|
 |[meta-xt-prod-devel-rcar-gen4](https://github.com/xen-troops/meta-xt-prod-devel-rcar-gen4)|@lorc Volodymyr Babchuk||
+|[meta-xt-prod-devel-rpi5](https://github.com/xen-troops/meta-xt-prod-devel-rpi5)|@GrygiriiS Grygorii Strashko|@oleksiimoisieiev Oleksii Moisieiev|
+|[meta-xt-prod-devel-sa8155p](https://github.com/xen-troops/meta-xt-prod-devel-sa8155p)|@lorc Volodymyr Babchuk||
+|[meta-xt-qcom](https://github.com/xen-troops/meta-xt-qcom)|@lorc Volodymyr Babchuk||
 |[meta-xt-rcar](https://github.com/xen-troops/meta-xt-rcar)|@lorc Volodymyr Babchuk|@rshym Ruslan Shymkevych|
 |[meta-xt-rcar-gen4](https://github.com/xen-troops/meta-xt-rcar-gen4)|@rshym Ruslan Shymkevych||
+|[meta-xt-rpi5](https://github.com/xen-troops/meta-xt-rpi5)|@GrygiriiS Grygorii Strashko|@oleksiimoisieiev Oleksii Moisieiev|
 |[meta-xt-vhost](https://github.com/xen-troops/meta-xt-vhost)|@lorc Volodymyr Babchuk|@otyshchenko1 Oleksandr Tyshchenko|
 |[moulin](https://github.com/xen-troops/moulin)|@lorc Volodymyr Babchuk||
 |[moulin-rcar-gen3](https://github.com/xen-troops/moulin-rcar-gen3)|@lorc Volodymyr Babchuk||
@@ -71,6 +77,7 @@
 |[zephyr-optee-client](https://github.com/xen-troops/zephyr-optee-client)|@firscity Dmytro Firsov|@lorc Volodymyr Babchuk|
 |[zephyr-optee-test](https://github.com/xen-troops/zephyr-optee-test)|@firscity Dmytro Firsov|@lorc Volodymyr Babchuk|
 |[zephyr-xenlib](https://github.com/xen-troops/zephyr-xenlib)|@firscity Dmytro Firsov||
+|[zephyr-xrun](https://github.com/xen-troops/zephyr-xrun)|@firscity Dmytro Firsov||
 
 ## Archived repositories
 - [agl_visclient](https://github.com/xen-troops/agl_visclient)
