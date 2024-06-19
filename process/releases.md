@@ -1,3 +1,26 @@
+# Quality of releases
+
+We prioritize the quality of our work over anything else, but sometimes there
+are moments when we really want to rapidly prototype something for the
+exhibition or for customer pilot. Release quality requirements exactly follow
+this logic:
+1. There are only 2 types of releases we do, it is either one or another, there
+is nothing in between or beyond.
+    * Regular releases must be of high quality in every possible sense.
+    * Demo releases may not be rigorously reviewed or properly tested. They may
+    contain compromises in engineering decisions, obviously bad code, and hordes
+    of TODOs. Nevertheless, git history of such releases must have high quality
+    commits with proper description and exhaustive notes on why some bad code
+    got in, questionable decisions in architecture were made, or testing of some
+    scenarios was not performed. Code review is still essential, reviewers
+    (including external) comments shall be addressed the same way as in regular
+    releases. This is absolutely necessary for future rework, and this is the
+    quality aspect that we shall never surrender.
+2. By default, we always stick to a Regular Release. The decision to produce a
+Demo release shall be made by management, not maintainer or other technical
+staff; it must be taken in advance and agreed with all peers who will perform
+review or may work on the codebase in future.
+
 # Requirements for releases
 
 Each repo has its release schedule. Release may be created for different
