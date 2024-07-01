@@ -51,13 +51,23 @@ Suitable for the release.
 
 ---
 ## Release tags
-And again, we have slightly different approaches for our repos and our forks
+Main rule - release tags can't be moved after creation. If fixes/updates
+are made to the release, then new release tag should be created according
+to release rules and SemVer requirements.
+
+We have slightly different approaches for our repos and our forks
 of the open-source repos.
 
 ### Our repos
 We use SymVer with a `v` prefix and three numbers separated by the dot `.`.
 So, proper release tags for our repos: `v1.0.0`, `v0.1.0`, `v2.0.3`.
 That simple.
+
+In some rare cases, we may need to create platform-specific branches on our
+repo. In this case we should follow bellow rule "Forks from the open source"
+and use branch-specific prefix.
+But in general, we should avoid these cases, and reconsider approach that
+leads to the creation of release tags on the non-main branch on our repo.
 
 ### Forks from the open source
 This one is more complex, taking into account that we may have branches for

@@ -51,3 +51,16 @@ repos. This means, that release notes have to describe:
 - changes in build requirements
 - expected build issues and possible solutions
 - known issues with workaround
+
+## Release branches
+We make the release from the main branch of our repo in most cases.
+Only in some rare cases, we release from the already existing
+platform-specific branch. But this need should be seriously considered
+and require management review & approval.
+
+For the release, we should create the release branch `vX.Y` from the main
+branch. So, for the release `2.3.0` we use branch `v2.3`.
+All hotfixes for that release have to be added to the same release branch
+with the new release tag.
+For example, hotfix was made for the release `2.3.0`. It must be pushed
+into the branch `v2.3`, and have to be tagged as `v2.3.1`.
