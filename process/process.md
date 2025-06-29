@@ -262,7 +262,7 @@ If appropriate, write how you tested it. Wait for automated checks to run.
 
 ## Review
 
-When you satisfied with your PR, as someone to review it. You can find
+When you satisfied with your PR, ask someone to review it. You can find
 list of maintainers and reviewers at
 [reviewers](https://xen-troops.github.io/reviewers) page. In most
 cases GitHub will assign reviewers immediately, but it is a good idea
